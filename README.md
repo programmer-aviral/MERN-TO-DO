@@ -68,3 +68,129 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+ABOUT THE PROJECT
+MERN To-Do App
+
+A full-stack To-Do List application built with the MERN stack (MongoDB, Express, React, Node.js).
+Users can add, delete, and mark tasks as completed, with priority levels and filtering functionality.
+The app features a modern UI with gradient background, cards, and responsive layout.
+
+🌟 Features
+
+Add tasks with priority (High, Medium, Low)
+
+Mark tasks as completed
+
+Delete tasks
+
+Filter tasks: All, Active, Completed
+
+Clear and modern UI
+
+Fully functional MERN stack project
+
+Stores tasks in MongoDB
+
+📁 Project Structure
+mern-todo/
+├─ backend/
+│  ├─ server.js           # Express server and API routes
+│  ├─ package.json        # Backend dependencies
+├─ frontend/
+│  ├─ src/
+│  │  ├─ App.js           # Main React component with all subcomponents
+│  │  ├─ App.css          # Styling for the frontend
+│  ├─ package.json        # Frontend dependencies
+├─ README.md
+
+⚙️ Technologies Used
+
+Frontend: React, Axios, CSS3
+
+Backend: Node.js, Express.js
+
+Database: MongoDB (local or Atlas)
+
+Other Libraries: cors, mongoose
+
+🚀 Installation
+1. Clone the repository
+git clone <your-repo-url>
+cd mern-todo
+
+2. Setup Backend
+cd backend
+npm install
+
+
+Make sure MongoDB is running locally:
+
+mongod
+
+
+Start the server:
+
+node server.js
+
+
+The backend runs at:
+
+http://localhost:5000
+
+3. Setup Frontend
+
+Open a new terminal:
+
+cd frontend
+npm install
+npm start
+
+
+The frontend runs at:
+
+http://localhost:3000
+
+🛠 API Endpoints
+Method	Endpoint	Description
+GET	/todos	Get all todos
+POST	/todos	Create a new todo
+PATCH	/todos/:id	Toggle completed status
+DELETE	/todos/:id	Delete a todo
+
+POST Body Example:
+
+{
+  "task": "Finish homework",
+  "priority": "High"
+}
+
+🎨 UI/UX
+
+Gradient background with modern card layout
+
+Tasks displayed in card-style list items
+
+Color-coded priority badges:
+
+High → Red
+
+Medium → Yellow
+
+Low → Green
+
+Filter buttons to switch between All, Active, Completed tasks
+
+💡 Future Improvements
+
+Dark/Light mode toggle
+
+Drag-and-drop for task reordering
+
+User authentication (login/signup)
+
+Task deadlines and notifications
+
+👨‍💻 Author
+
+Aviral Gandhi
